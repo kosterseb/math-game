@@ -1,0 +1,71 @@
+{
+    "map_name": "Twin Paths of Fate",
+    "functions": [
+      {
+        "id": "parabola_1",
+        "equation": "y = (x^2)/4",
+        "domain": [-5, 5],
+        "node_interval": 2,
+        "rules": {
+          "vertex": "Crossroads/Shop",
+          "distance_from_vertex": {
+            "low": "Weak Monster",
+            "medium": "Monster",
+            "high": "Mini-Boss"
+          }
+        }
+      },
+      {
+        "id": "sine_1",
+        "equation": "y = 2*sin(x)",
+        "domain": [-5, 5],
+        "node_interval": 1,
+        "rules": {
+          "zeros": "Crossroads",
+          "peaks": "Reward",
+          "troughs": "Major Reward",
+          "between": "Small Reward"
+        }
+      }
+    ],
+    "intersections": [
+      {
+        "functions": ["parabola_1", "sine_1"],
+        "point": [0, 0],
+        "node_type": "Crossroads/Shop"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "N1",
+        "coords": [-4, -1.51],
+        "function": "sine_1",
+        "type": "Reward"
+      },
+      {
+        "id": "N2",
+        "coords": [-2, -1.82],
+        "function": "sine_1",
+        "type": "Major Reward"
+      },
+      {
+        "id": "N3",
+        "coords": [0, 0],
+        "function": "intersection",
+        "type": "Crossroads/Shop"
+      },
+      {
+        "id": "N4",
+        "coords": [2, 1],
+        "function": "parabola_1",
+        "type": "Monster"
+      },
+      {
+        "id": "N5",
+        "coords": [4, 4],
+        "function": "parabola_1",
+        "type": "Mini-Boss"
+      }
+    ]
+  }
+  

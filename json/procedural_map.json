@@ -1,0 +1,204 @@
+{
+  "map_name": "Twin Paths of Fate",
+  "functions": [
+    {
+      "id": "parabola_1",
+      "type": "parabola",
+      "equation": "y = (x^2)/4",
+      "domain": [
+        -5,
+        5
+      ],
+      "node_interval": 2
+    },
+    {
+      "id": "sine_1",
+      "type": "sine",
+      "equation": "y = 2*sin(x)",
+      "domain": [
+        -5,
+        5
+      ],
+      "node_interval": 1
+    }
+  ],
+  "intersections": [
+    {
+      "functions": [
+        "parabola_1",
+        "sine_1"
+      ],
+      "point": [
+        -0.0,
+        0.0
+      ],
+      "node_type": "Crossroads/Shop"
+    },
+    {
+      "functions": [
+        "parabola_1",
+        "sine_1"
+      ],
+      "point": [
+        2.4,
+        1.44
+      ],
+      "node_type": "Crossroads/Shop"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "N1",
+      "coords": [
+        -5.0,
+        6.25
+      ],
+      "function": "parabola_1",
+      "type": "Mini-Boss"
+    },
+    {
+      "id": "N2",
+      "coords": [
+        -3.0,
+        2.25
+      ],
+      "function": "parabola_1",
+      "type": "Monster"
+    },
+    {
+      "id": "N3",
+      "coords": [
+        -1.0,
+        0.25
+      ],
+      "function": "parabola_1",
+      "type": "Weak Monster"
+    },
+    {
+      "id": "N4",
+      "coords": [
+        1.0,
+        0.25
+      ],
+      "function": "parabola_1",
+      "type": "Weak Monster"
+    },
+    {
+      "id": "N5",
+      "coords": [
+        3.0,
+        2.25
+      ],
+      "function": "parabola_1",
+      "type": "Monster"
+    },
+    {
+      "id": "N6",
+      "coords": [
+        5.0,
+        6.25
+      ],
+      "function": "parabola_1",
+      "type": "Mini-Boss"
+    },
+    {
+      "id": "N7",
+      "coords": [
+        -5.0,
+        1.92
+      ],
+      "function": "sine_1",
+      "type": "Reward"
+    },
+    {
+      "id": "N8",
+      "coords": [
+        -4.0,
+        1.51
+      ],
+      "function": "sine_1",
+      "type": "Small Reward"
+    },
+    {
+      "id": "N9",
+      "coords": [
+        -3.0,
+        -0.28
+      ],
+      "function": "sine_1",
+      "type": "Small Reward"
+    },
+    {
+      "id": "N10",
+      "coords": [
+        -2.0,
+        -1.82
+      ],
+      "function": "sine_1",
+      "type": "Small Reward"
+    },
+    {
+      "id": "N11",
+      "coords": [
+        -1.0,
+        -1.68
+      ],
+      "function": "sine_1",
+      "type": "Small Reward"
+    },
+    {
+      "id": "N12",
+      "coords": [
+        0.0,
+        0.0
+      ],
+      "function": "sine_1",
+      "type": "Crossroads"
+    },
+    {
+      "id": "N13",
+      "coords": [
+        1.0,
+        1.68
+      ],
+      "function": "sine_1",
+      "type": "Small Reward"
+    },
+    {
+      "id": "N14",
+      "coords": [
+        2.0,
+        1.82
+      ],
+      "function": "sine_1",
+      "type": "Small Reward"
+    },
+    {
+      "id": "N15",
+      "coords": [
+        3.0,
+        0.28
+      ],
+      "function": "sine_1",
+      "type": "Small Reward"
+    },
+    {
+      "id": "N16",
+      "coords": [
+        4.0,
+        -1.51
+      ],
+      "function": "sine_1",
+      "type": "Small Reward"
+    },
+    {
+      "id": "N17",
+      "coords": [
+        5.0,
+        -1.92
+      ],
+      "function": "sine_1",
+      "type": "Major Reward"
+    }
+  ]
+}
